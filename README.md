@@ -28,4 +28,4 @@ Built with Apache Mahout (v0.9)
 
 Takes input as a user-item preference dataset (data.csv)
 
-#output:
+#output:[Recommend.txt](https://github.com/user-attachments/files/20886695/Recommend.txt)
