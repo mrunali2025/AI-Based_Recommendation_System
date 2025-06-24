@@ -15,7 +15,7 @@ public class Recommend {
     public static void main(String[] args) {
         try {
            
-            DataModel model = new FileDataModel(new File("data/dataset.csv")); // Make sure this path is correct
+            DataModel model = new FileDataModel(new File("data/dataset.csv")); 
 
             
             UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
@@ -27,7 +27,7 @@ public class Recommend {
             GenericUserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
 
            
-            List<RecommendedItem> recommendations = recommender.recommend(1, 3); // 3 items
+            List<RecommendedItem> recommendations = recommender.recommend(1, 3); 
 
           
             for (RecommendedItem item : recommendations) {
